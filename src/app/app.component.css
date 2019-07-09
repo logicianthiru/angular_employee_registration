@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+mat-expansion-panel {
+    margin: 5em;
+}
+
+mat-card {
+    margin: 1em;
+}
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+}

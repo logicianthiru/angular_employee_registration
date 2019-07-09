@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jack Reacher",
+      "mobile": "4568303",
+      "email": "jackreacher@gmail.com",
+      "dob": "05/30/2015"
+    },
+    {
+      "name": "Logan",
+      "mobile": "84489549",
+      "email": "logan@gmail.com",
+      "dob": "25/05/1997",
+      "id": 2
+    },
+    {
+      "name": "Peter Parker",
+      "mobile": "903494345",
+      "email": "peterparker@gmail.com",
+      "dob": "12/05/1990",
+      "id": 3
+    }
+  ]
+}

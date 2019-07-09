@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">Employee</mat-toolbar>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Add Employee
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="employee.name" name="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Mobile" [(ngModel)]="employee.mobile" name="mobile">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Email" [(ngModel)]="employee.email" name="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Date of birth (dd/mm/yyyy)" [(ngModel)]="employee.dob" name="dob">
+    </mat-form-field>
+
+    <button mat-button (click)="addEmployee()">Add employee</button>
+  </form>
+</mat-expansion-panel>
+
+<div class="employees">
+  <mat-card *ngFor="let employee of employeeList">
+    <mat-card-title>{{ employee.name }}</mat-card-title>
+    <mat-card-subtitle>{{ employee.email }}</mat-card-subtitle>
+    <mat-card-subtitle>{{ employee.mobile }}</mat-card-subtitle>
+    <mat-card-subtitle>{{ employee.dob }}</mat-card-subtitle>
+    <button mat-button (click)="deleteEmployee()">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+    </button>
+  </mat-card>
+</div>
