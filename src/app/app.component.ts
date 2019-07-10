@@ -34,6 +34,6 @@ export class AppComponent {
   }
 
   deleteEmployee() {
-    
+    alert("Deleted")
   }
 }

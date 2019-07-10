@@ -9,7 +9,12 @@ mat-expansion-panel {
 }
 
 mat-card {
+    background: #8BC34A;
     margin: 1em;
+}
+
+mat-card, mat-card-title, mat-card-subtitle, mat-card-content {
+    color: #fff;
 }
 
 .employees {
